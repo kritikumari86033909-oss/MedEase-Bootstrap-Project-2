@@ -1,0 +1,272 @@
+/*=====================================
+        Expertise Section
+======================================*/
+
+.expertise-section {
+    background: $body-bg;
+
+    .section-title {
+        font-family: $font-family-heading;
+        font-size:3rem;
+        font-weight: 500;
+        color: $black;
+        line-height: 1.2;
+
+        span {
+            color: $primary;
+            font-style: italic;
+        }
+    }
+
+    .see-all {
+        font-family: $font-family-base;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: $primary;
+        transition: $transition-base;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
+
+/*=====================================
+            Swiper
+======================================*/
+
+.expertiseSwiper {
+    width: calc(100% - 32px);
+    overflow: visible;
+}
+
+.expertise-section {
+    overflow: hidden;
+}
+
+.expertise-slider-wrapper {
+    padding-right: 32px;
+}
+
+
+
+/*=====================================
+            Card
+======================================*/
+
+.expert-card {
+    background: $section-bg;
+    border-radius: $border-radius-xl;
+    padding: 1.5rem;
+    height: 100%;
+    transition: $transition-base;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: $box-shadow;
+    }
+
+    h4 {
+        font-size: $h5-font-size;
+        font-weight: 600;
+        color: $black;
+        margin: 1.5rem 0 .9rem;
+    }
+
+    p {
+        font-family: $font-family-base;
+        color: $text;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+    }
+}
+
+/*=====================================
+            Icon
+======================================*/
+
+.icon-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: $white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: $box-shadow-sm;
+
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+}
+
+/*=====================================
+            Button
+======================================*/
+
+.book-btn {
+    color: $primary;
+    font-weight: 600;
+    font-family: $font-family-base;
+
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+
+    transition: $transition-base;
+
+    &:hover {
+        color: $primary;
+        gap: .8rem;
+    }
+}
+
+/*=====================================
+        Bottom Navigation
+======================================*/
+
+.expertise-navigation {
+
+    margin-top: 3rem;
+
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom {
+
+        width: 48px;
+        height: 48px;
+
+        border: none;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: $transition-base;
+    }
+
+    .swiper-button-prev-custom {
+
+        background: $light;
+        color: $text;
+    }
+
+    .swiper-button-next-custom {
+        // transform: translateX(-40px);
+        background: $white;
+        
+    }
+
+    button:hover {
+
+        transform: scale(1.05);
+    }
+    
+}
+
+
+/*=====================================
+        Pagination
+======================================*/
+
+.swiper-pagination {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    .swiper-pagination-bullet {
+
+        width: 8px;
+        height: 8px;
+
+        opacity: 1;
+
+        background: $border-color;
+
+        transition: $transition-base;
+    }
+
+    .swiper-pagination-bullet-active {
+
+        width: 24px;
+
+        border-radius: $border-radius-pill;
+
+        background: $primary;
+    }
+}
+
+/*=====================================
+        Responsive
+======================================*/
+
+@media (max-width:991.98px){
+
+    .expertise-section{
+
+        .section-title{
+
+            font-size:2.5rem;
+        }
+    }
+
+    .expert-card{
+
+        padding:1.7rem;
+    }
+}
+
+@media (max-width:767.98px){
+
+    .expertise-section{
+
+        .section-title{
+
+            font-size:2rem;
+        }
+    }
+
+    .expert-card{
+
+        padding:1.5rem;
+
+        h4{
+
+            font-size:$h6-font-size;
+        }
+    }
+
+    .expertise-navigation{
+
+        margin-top:2rem;
+    }
+}
+
+@media (max-width:575.98px){
+
+    .expertise-section{
+
+        .section-title{
+
+            font-size:1.75rem;
+        }
+    }
+
+    .expert-card{
+
+        border-radius:$border-radius-lg;
+        padding:1.3rem;
+    }
+
+    .icon-circle{
+
+        width:48px;
+        height:48px;
+    }
+}

@@ -1,0 +1,86 @@
+// //----------------hero section--------------------------------------//
+
+.hero-section {
+  
+  .rating-badge {
+    background-color: rgba($primary, 0.08);
+    color: $primary;
+  }
+
+  // Spectral Font for "to"
+  .highlight-to {
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    color: $primary;
+  }
+
+  // Primary Button
+  .btn-consultation {
+    background-color: $primary;
+    border: 1px solid $primary;
+
+    &:hover {
+      background-color: darken($primary, 8%);
+      border-color: darken($primary, 8%);
+      color:$white;
+    }
+  }
+
+  // Learn More Blue Button
+  .btn-learn-more {
+    color: $primary;
+    border: 1px solid rgba($primary, 0.4);
+    background-color: transparent;
+    transition: all 0.3s ease;
+
+    span {
+      color: $primary;
+    }
+
+    .arrow-icon {
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      background-color: rgba($primary, 0.05);
+      border-color: $primary;
+      color: $primary;
+
+      .arrow-icon {
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  // Right Side Floating Badges & Image
+  .hero-image-wrapper {
+    max-width: 460px;
+
+    .hero-main-img {
+      border-radius: 24px;
+    }
+
+    .stat-card {
+      .stat-num {
+        color: $primary;
+        font-size: 1.4rem;
+        line-height: 1;
+      }
+
+      .stat-label {
+        font-size: 0.75rem;
+        line-height: 1.2;
+      }
+    }
+
+    .stat-top {
+      top: -12px;
+      right: -10px;
+    }
+
+    .stat-bottom {
+      bottom: -12px;
+      left: -10px;
+    }
+  }
+}

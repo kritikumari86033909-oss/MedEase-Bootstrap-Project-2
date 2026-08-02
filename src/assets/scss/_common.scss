@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-base;
+    background-color: $body-bg;
+    color: $text;
+    overflow-x: hidden;
+}
+
+.section-title{
+    font-family: $font-family-base;
+}
+
+.section-title span{
+    font-family: $font-family-heading;
+    color: $primary;
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+section {
+    padding: 80px 0;
+}
+

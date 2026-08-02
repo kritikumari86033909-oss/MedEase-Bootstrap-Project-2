@@ -1,0 +1,60 @@
+
+$font-size-base: 1rem;
+$font-family-base: "Inter", sans-serif;
+$font-family-heading: "Spectral", serif;
+
+$h1-font-size: $font-size-base * 5;
+$h2-font-size: $font-size-base * 3.75;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base * 1.125;
+
+/*==============================
+Brand Colors
+==============================*/
+
+$primary: #2F80ED;
+$secondary: #808080;
+
+
+/*==============================
+Theme Colors
+==============================*/
+
+$white: #FFFFFF;
+$light: #F8F9FA;
+$black: #111111;
+$text-dark: #1F2937;
+$text: #6B7280;
+$text-light: #9CA3AF;
+$body-bg: #FFFFFF;
+$section-bg: #F8FAFC;
+$border-color: #E5E7EB;
+$footer-bg: #171717;
+$card-bg: #F5F5F5;
+
+
+/*==============================
+Radius
+==============================*/
+
+$border-radius-sm: .5rem;
+$border-radius: .75rem;
+$border-radius-lg: 1rem;
+$border-radius-xl: 1.5rem;
+$border-radius-pill: 50rem;
+
+/*==============================
+Shadow
+==============================*/
+
+$box-shadow-sm: 0 4px 10px rgba(0,0,0,.05);
+$box-shadow: 0 10px 30px rgba(0,0,0,.08);
+$box-shadow-lg: 0 15px 40px rgba(0,0,0,.12);
+
+/*==============================
+Transition
+==============================*/
+
+$transition-base: all .3s ease;

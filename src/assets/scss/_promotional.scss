@@ -1,0 +1,146 @@
+.cta-section {
+
+    .cta-bg {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .cta-wrapper {
+
+        min-height: 500px;
+        background-image: url("../images/pexels-tima-miroshnichenko.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0;
+
+        &::before {
+
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.20);
+
+        }
+
+    }
+
+    .cta-content {
+
+        position: relative;
+        z-index: 2;
+        max-width: 760px;
+        padding: 20px;
+
+    }
+
+    .cta-title {
+
+        font-family:$font-family-base;
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1.2;
+        color: $white;
+
+    }
+
+    .btn {
+
+        min-width: 180px;
+        height: 45px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.95rem;
+        font-weight: 500;
+
+    }
+
+}
+
+@media (max-width:991.98px) {
+
+    .cta-section {
+
+        .cta-wrapper {
+
+            min-height: 420px;
+
+        }
+
+        .cta-title {
+
+            font-size: 3rem;
+
+        }
+
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    .cta-section {
+
+        .cta-wrapper {
+            min-height: 450px;
+            background-image: url("../images/Mask\ group.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: center top;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+        }
+
+        .cta-content {
+            width: 100%;
+            max-width: 320px;
+            padding: 0;
+            transform: none; // translateY hata do
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            line-height: 1.3;
+            margin-bottom: 28px;
+        }
+
+        /* Buttons container */
+        .cta-content .d-flex {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px !important;
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 280px;
+            height: 48px;
+            padding: 0;
+            font-size: .95rem;
+        }
+    }
+}
+
+@media (max-width:575.98px) {
+
+    .cta-section {
+
+        .cta-wrapper {
+            min-height: 420px;
+        }
+
+        .cta-title {
+            font-size: 1.75rem;
+        }
+
+        .btn {
+            max-width: 260px;
+            height: 46px;
+        }
+    }
+}

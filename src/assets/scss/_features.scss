@@ -1,0 +1,398 @@
+.features-section {
+    background: $white;
+    overflow: hidden;
+    padding: 80px 0;
+
+    .container {
+        max-width: 1320px;
+    }
+
+    /*=========================
+        Heading
+    =========================*/
+
+    .features-title {
+        font-family: $font-family-heading;
+        font-size: 2.8rem;
+        font-weight: 600;
+        line-height: 1.3;
+        color: $black;
+        text-align: center;
+        margin-bottom: 60px;
+
+        span {
+            color: $primary;
+            font-style: italic;
+        }
+    }
+
+    /*=========================
+        Bootstrap Gap
+    =========================*/
+
+    .row.g-4 {
+        --bs-gutter-x: 24px;
+        --bs-gutter-y: 24px;
+    }
+
+    /*=========================
+        Common Card
+    =========================*/
+
+    .feature-card-big,
+    .feature-card-small,
+    .feature-card-video {
+        background: $card-bg;
+        border-radius: 24px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, .05);
+        transition: .3s ease;
+    }
+
+    .feature-card-big:hover,
+    .feature-card-small:hover,
+    .feature-card-video:hover {
+        transform: translateY(-5px);
+    }
+
+    /*=========================
+        Big Card
+    =========================*/
+
+    .feature-card-big {
+        position: relative;
+        overflow: hidden;
+        min-height: 360px;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+
+        .row {
+            width: 100%;
+            align-items: center;
+
+        }
+
+        .col-md-5 {
+            position: relative;
+            
+        }
+
+        .phone-img {
+            position: absolute;
+            top: 35%;
+            right: 20px;
+            transform: translateY(-60%);
+            width: 240px;
+            max-width: 100%;
+            z-index: 2;
+        }
+
+
+    }
+
+
+    /*=========================
+        Small Card
+    =========================*/
+
+    .feature-card-small {
+        min-height: 205px;
+        padding: 28px;
+    }
+
+    /*=========================
+        Right Card
+    =========================*/
+
+    .feature-card-video {
+        min-height: 560px;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*=========================================
+        Common Typography
+=========================================*/
+
+.features-section {
+
+    .feature-icon {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .feature-card-big,
+    .feature-card-small,
+    .feature-card-video {
+
+        h4,
+        h5 {
+            font-family: $font-family-heading;
+            color: $black;
+            font-weight: 600;
+            line-height: 1.3;
+            margin: 0 0 12px;
+        }
+
+        p {
+            font-size: .9rem;
+            color: $gray-600;
+            line-height: 1.6;
+            margin: 0;
+        }
+    }
+
+    /*=========================
+        Big Card
+    =========================*/
+
+    .feature-card-big {
+
+        h4 {
+            font-size: 1.35rem;
+            max-width: 230px;
+        }
+
+        p {
+            max-width: 290px;
+        }
+    }
+
+    /*=========================
+        Small Card
+    =========================*/
+
+    .feature-card-small {
+
+        h5 {
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: .85rem;
+        }
+    }
+
+    /*=========================
+        Right Card
+    =========================*/
+
+    .feature-card-video {
+
+        h4 {
+            font-size: 1.35rem;
+            max-width: 250px;
+        }
+
+        p {
+            max-width: 310px;
+            margin-bottom: 24px;
+        }
+    }
+
+    /*=========================
+        Phone Image
+    =========================*/
+
+    .phone-img {
+        position: absolute;
+        right: 15px;
+        bottom: -10px;
+        width: 240px;
+        height: auto;
+        transform: translateY(20px);
+        z-index: 2;
+    }
+
+    /*=========================
+        Video Image
+    =========================*/
+
+    .video-image {
+        margin-top: auto;
+        text-align: center;
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: auto;
+            object-fit: contain;
+        }
+    }
+}
+
+/*=========================================
+        Laptop (1200px)
+=========================================*/
+
+@media (max-width: 1199.98px) {
+
+    .features-section {
+
+        .feature-card-big {
+            min-height: 330px;
+            padding: 32px;
+        }
+
+        .feature-card-small {
+            min-height: 190px;
+            padding: 24px;
+        }
+
+        .feature-card-video {
+            min-height: 500px;
+            padding: 32px;
+        }
+
+        .phone-img {
+            width: 215px;
+            right: 10px;
+            bottom: -5px;
+        }
+
+        .video-image img {
+            max-width: 270px;
+        }
+    }
+}
+
+
+/*=========================================
+        Tablet
+=========================================*/
+
+@media (max-width: 991.98px) {
+
+    .features-section {
+
+        .features-title {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+
+        .feature-card-big {
+
+            min-height: auto;
+            text-align: center;
+
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        .phone-img {
+            position: static;
+            transform: none;
+            width: 200px;
+            margin: 25px auto 0;
+            display: block;
+        }
+
+        .feature-card-small {
+            min-height: auto;
+        }
+
+        .feature-card-video {
+            min-height: auto;
+            margin-top: 10px;
+        }
+
+        .video-image {
+            margin-top: 25px;
+
+            img {
+                max-width: 280px;
+            }
+        }
+    }
+}
+
+
+/*=========================================
+        Mobile
+=========================================*/
+
+@media (max-width: 767.98px) {
+
+    .features-section {
+
+        padding: 60px 0;
+
+        .features-title {
+            font-size: 1.8rem;
+        }
+
+        .feature-card-big,
+        .feature-card-small,
+        .feature-card-video {
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .feature-icon {
+            width: 28px;
+            height: 28px;
+        }
+
+        .feature-card-big h4,
+        .feature-card-video h4 {
+            font-size: 1.2rem;
+            max-width: 100%;
+        }
+
+        .feature-card-small h5 {
+            font-size: 1rem;
+        }
+
+        .feature-card-big p,
+        .feature-card-small p,
+        .feature-card-video p {
+            font-size: .85rem;
+            max-width: 100%;
+        }
+
+        .phone-img {
+            width: 170px;
+            margin-top: 20px;
+        }
+
+        .video-image img {
+            max-width: 100%;
+        }
+    }
+}
+
+
+/*=========================================
+        Small Mobile
+=========================================*/
+
+@media (max-width: 575.98px) {
+
+    .features-section {
+
+        .features-title {
+            font-size: 1.5rem;
+        }
+
+        .feature-card-big,
+        .feature-card-small,
+        .feature-card-video {
+            padding: 18px;
+        }
+
+        .phone-img {
+            width: 150px;
+        }
+
+        .feature-card-small {
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,228 @@
+.testimonial-section {
+    background: $white;
+    overflow: hidden;
+
+    .testimonial-title {
+        font-family: $font-family-heading;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 1.3;
+        color: $black;
+
+        span {
+            color: $primary;
+            font-style: italic;
+        }
+    }
+
+    /* ===================== Swiper ===================== */
+
+    .testimonialSwiper {
+        overflow: visible;
+
+        .swiper-slide {
+            height: auto;
+        }
+    }
+
+    .testimonial-item {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    /* ===================== Card ===================== */
+
+    .testimonial-card {
+        height: 175px;
+        // border-radius: 14px;
+        overflow: hidden;
+        background: #F8FAFC;
+        border: 1px solid #E9EDF4;
+        transition: .3s ease;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 18px 35px rgba(0, 0, 0, .08);
+    }
+
+    /* ===================== Image Card ===================== */
+
+    .image-card {
+        background: $primary;
+        width: 240px;
+        height: 280px;
+        border-radius: 16px;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0;
+
+        img {
+
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: 65% bottom;
+            transform: scale(1.25);
+            // width: auto;
+            // height: 100%; // Card ki full height le
+            // max-width: 120%; // Left-right gap kam hoga
+            // object-fit: contain;
+            // object-position: bottom center;
+            // display: block;
+        }
+    }
+
+    /* ===================== Text Card ===================== */
+
+    .text-card {
+        padding: 28px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .testimonial-text {
+        font-size: .95rem;
+        line-height: 1.9;
+        color: $text;
+        margin-bottom: 28px;
+    }
+
+    .patient-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $primary;
+        margin-bottom: 4px;
+    }
+
+    .patient-designation {
+        font-size: .9rem;
+        color: $text-light;
+    }
+
+    /* ===================== Navigation ===================== */
+
+    .testimonial-navigation {
+
+        .swiper-button-prev-custom,
+        .swiper-button-next-custom {
+
+            width: 46px;
+            height: 46px;
+            border: 0;
+            border-radius: 50%;
+            padding: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .nav-arrow {
+                width: 18px;
+                height: 18px;
+                object-fit: contain;
+            }
+        }
+
+        .swiper-button-prev-custom {
+            background: #ECECEC;
+        }
+
+        .swiper-button-next-custom {
+            background: $primary;
+        }
+    }
+
+    /* ===================== Pagination ===================== */
+
+    .swiper-pagination {
+        margin-top: 30px;
+
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            background: #D6D6D6;
+            opacity: 1;
+            margin: 0 5px;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 22px;
+            border-radius: 20px;
+            background: $primary;
+        }
+    }
+
+    /* ===================== Laptop ===================== */
+
+    @media (max-width:1199.98px) {
+
+        .testimonial-card {
+            height: 310px;
+        }
+
+        .testimonial-title {
+            font-size: 2rem;
+        }
+
+    }
+
+    /* ===================== Tablet ===================== */
+
+    @media (max-width:991.98px) {
+
+        .testimonial-card {
+            height: 290px;
+        }
+
+        .testimonial-title {
+            font-size: 1.8rem;
+        }
+
+        .text-card {
+            padding: 22px;
+        }
+
+    }
+
+    /* ===================== Mobile ===================== */
+
+    @media (max-width:767.98px) {
+
+        .testimonial-title {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        .testimonial-card {
+            height: 320px;
+        }
+
+        .text-card {
+            padding: 20px;
+        }
+
+    }
+
+    @media (max-width:575.98px) {
+
+        .testimonial-title {
+            font-size: 1.4rem;
+        }
+
+        .testimonial-card {
+            height: 280px;
+        }
+
+        .testimonial-text {
+            font-size: .9rem;
+        }
+
+    }
+}
