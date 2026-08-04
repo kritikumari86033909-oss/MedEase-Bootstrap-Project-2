@@ -1,56 +1,115 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: $font-family-base;
-    background-color: $body-bg;
-    color: $text;
-    overflow-x: hidden;
+  font-family: $font-family-base;
+  background-color: $body-bg;
+  color: $text;
+  overflow-x: hidden;
 }
 
-.section-title{
-    font-family: $font-family-base;
+.section-title {
+  font-family: $font-family-base;
 }
 
-.section-title span{
-    font-family: $font-family-heading;
-    color: $primary;
-    font-style: italic;
+.section-title span {
+  font-family: $font-family-heading;
+  color: $primary;
+  font-style: italic;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 button {
-    border: none;
-    outline: none;
-    background: transparent;
-    cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 input,
 textarea {
-    outline: none;
+  outline: none;
 }
 
 section {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
+
+// blog-secton
+.w-95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.blog-section {
+  .blog-img-box {
+    overflow: hidden;
+    border-radius: 16px;
+  }
+
+  .blog-img-box img {
+    transform: translateX(-10px);
+  }
+
+
+  .swiper-button-prev-blog,
+  .swiper-button-next-blog {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid $border-color;
+    background-color:$white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    &.active,
+    &:hover {
+      background-color: $primary !important;
+      border-color: $primary !important;
+
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  .swiper-pagination-blog {
+    position: static !important;
+    width: auto;
+    display: flex;
+    gap: 6px;
+  }
+
+  .swiper-pagination-blog .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: $border-color;
+    opacity: 1;
+  }
+
+  .swiper-pagination-blog .swiper-pagination-bullet-active {
+    background: $primary !important;
+  }
+}
